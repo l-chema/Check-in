@@ -1,5 +1,12 @@
 from django.db import models
 
+class PequenoGrupo(models.Model):
+    nome = models.CharField(max_length=100)
+    lider = models.CharField(max_length=100, blank=True, null=True)
+
+    def __str__(self):
+        return self.nome
+
 class Adolescente(models.Model):
     nome = models.CharField(max_length=100)
     sobrenome = models.CharField(max_length=100)
@@ -10,7 +17,7 @@ class Adolescente(models.Model):
         ("F", "Feminino"),
     ]
     genero = models.CharField(max_length=1, choices=GENERO_CHOICES, blank=True, null=False)
-    pg = models.CharField(max_length=50, blank=True, null=True)
+    pg = models.ForeignKey(PequenoGrupo, on_delete=models.SET_NULL, blank=True, null=True, related_name='adolescentes')
     data_inicio = models.DateField(blank=True, null=True)
 
     def __str__(self):

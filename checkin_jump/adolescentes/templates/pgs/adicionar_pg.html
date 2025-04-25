@@ -1,0 +1,18 @@
+{% extends 'adolescentes/base.html' %}
+{% block content %}
+<div class="container mt-4">
+    <h2>Adicionar Pequeno Grupo</h2>
+    <form method="post">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="nome" class="form-label">Nome do PG:</label>
+            <input type="text" name="nome" id="nome" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="lider" class="form-label">Líder:</label>
+            <input type="text" name="lider" id="lider" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary">Criar PG</button>
+    </form>
+</div>
+{% endblock %}

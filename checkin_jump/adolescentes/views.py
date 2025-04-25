@@ -1,6 +1,6 @@
 from datetime import date, datetime
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Adolescente, DiaEvento, Presenca
+from .models import Adolescente, DiaEvento, Presenca, PequenoGrupo
 from .forms import AdolescenteForm
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
@@ -111,6 +111,19 @@ def adicionar_dia_evento(request):
 def checkin_dia(request, dia_id):
     dia = get_object_or_404(DiaEvento, pk=dia_id)
     adolescentes = Adolescente.objects.all()
+    filtro = request.GET.get('filtro', 'todos')  # padrão: todos
+
+    presencas = Presenca.objects.filter(dia=dia)
+    presentes_ids = presencas.filter(presente=True).values_list('adolescente_id', flat=True)
+
+    # Aplica filtro
+    if filtro == 'presentes':
+        adolescentes = adolescentes.filter(id__in=presentes_ids)
+    elif filtro == 'ausentes':
+        adolescentes = adolescentes.exclude(id__in=presentes_ids)
+
+    # Ordena: primeiro os presentes
+    adolescentes = sorted(adolescentes, key=lambda x: x.id not in presentes_ids)
 
     if request.method == 'POST':
         presencas_ids = request.POST.getlist('presentes')
@@ -124,11 +137,35 @@ def checkin_dia(request, dia_id):
         messages.success(request, "Check-in realizado com sucesso!")
         return redirect('pagina_checkin')
 
-    presencas = Presenca.objects.filter(dia=dia)
-    presentes_ids = presencas.filter(presente=True).values_list('adolescente_id', flat=True)
-
     return render(request, 'checkin/checkin_dia.html', {
         'dia': dia,
         'adolescentes': adolescentes,
-        'presentes_ids': presentes_ids
+        'presentes_ids': presentes_ids,
+        'filtro': filtro,
     })
+
+@login_required
+def adicionar_pg(request):
+    if request.method == 'POST':
+        nome = request.POST.get('nome')
+        lider = request.POST.get('lider')
+
+        if nome:
+            PequenoGrupo.objects.create(nome=nome, lider=lider)
+            messages.success(request, "PG criado com sucesso.")
+            return redirect('lista_pgs')
+        else:
+            messages.error(request, "O nome do PG é obrigatório.")
+
+    return render(request, 'pgs/adicionar_pg.html')
+
+@login_required
+def lista_pgs(request):
+    pgs = PequenoGrupo.objects.all()
+    return render(request, 'pgs/lista_pgs.html', {'pgs': pgs})
+
+@login_required
+def detalhes_pg(request, pg_id):
+    pg = get_object_or_404(PequenoGrupo, id=pg_id)
+    adolescentes = Adolescente.objects.filter(pg=pg)
+    return render(request, 'pgs/pg.html', {'pg': pg, 'adolescentes': adolescentes})

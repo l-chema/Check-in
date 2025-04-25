@@ -1,0 +1,18 @@
+{% extends 'adolescentes/base.html' %}
+{% block content %}
+<div class="container mt-4">
+    <h2>Integrantes do PG {{ pg.nome }}</h2>
+    {% if adolescentes %}
+        <ul class="list-group">
+            {% for adolescente in adolescentes %}
+            <li class="list-group-item">
+                {{ adolescente.nome }} {{ adolescente.sobrenome }}
+            </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Este PG ainda não possui integrantes.</p>
+    {% endif %}
+    <a href="{% url 'lista_pgs' %}" class="btn btn-secondary mt-3">Voltar para lista de PGs</a>
+</div>
+{% endblock %}

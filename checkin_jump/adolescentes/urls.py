@@ -22,6 +22,8 @@ urlpatterns = [
     path("checkin/<int:dia_id>/", views.checkin_dia, name="checkin_dia"),
 
     # PGs
-    path("pgs/", views.pagina_pgs, name="pagina_pgs"),
+    path('pgs/', views.lista_pgs, name='lista_pgs'),
+    path('pgs/adicionar/', views.adicionar_pg, name='adicionar_pg'),
+    path('pgs/<int:pg_id>/', views.detalhes_pg, name='detalhes_pg'),
 ]
 
