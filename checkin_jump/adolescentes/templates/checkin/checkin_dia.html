@@ -1,26 +1,27 @@
 {% extends 'adolescentes/base.html' %}
 {% block content %}
+<h2>Check-in do dia {{ dia.data|date:"d/m/Y" }}</h2>
+
+<div class="mb-3">
+  <a href="?filtro=todos" class="btn btn-outline-primary {% if filtro == 'todos' %}active{% endif %}">Todos</a>
+  <a href="?filtro=presentes" class="btn btn-outline-success {% if filtro == 'presentes' %}active{% endif %}">Somente Presentes</a>
+  <a href="?filtro=ausentes" class="btn btn-outline-secondary {% if filtro == 'ausentes' %}active{% endif %}">Somente Ausentes</a>
+</div>
+
 <form method="post">
-    {% csrf_token %}
-
-    <!-- Cabeçalho fixo com data e botão de salvar -->
-    <div class="d-flex justify-content-between align-items-center mb-3 sticky-top bg-white p-3 shadow-sm border-bottom" style="top: 0; z-index: 1020;">
-        <h2 class="m-0">Check-in: {{ dia.data|date:"d/m/Y" }}</h2>
-        <button type="submit" class="btn btn-success">Salvar Check-in</button>
-    </div>
-
-    <!-- Lista de adolescentes -->
-    <div class="row row-cols-1 row-cols-md-2 g-3">
-        {% for adolescente in adolescentes %}
-        <div class="col">
-            <div class="form-check border rounded p-2 shadow-sm">
-                <input class="form-check-input" type="checkbox" name="presentes" value="{{ adolescente.id }}" id="adol{{ adolescente.id }}" {% if adolescente.id in presentes_ids %}checked{% endif %}>
-                <label class="form-check-label" for="adol{{ adolescente.id }}">
-                    {{ adolescente.nome }} {{ adolescente.sobrenome }}
-                </label>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
+  {% csrf_token %}
+  <ul class="list-group mb-3">
+    {% for adolescente in adolescentes %}
+      <li class="list-group-item">
+        <label class="form-check-label d-flex align-items-center">
+          <input type="checkbox" name="presentes" value="{{ adolescente.id }}"
+                 {% if adolescente.id in presentes_ids %}checked{% endif %}
+                 class="form-check-input me-2">
+          {{ adolescente.nome }} {{ adolescente.sobrenome }}
+        </label>
+      </li>
+    {% endfor %}
+  </ul>
+  <button type="submit" class="btn btn-success">Salvar Check-in</button>
 </form>
 {% endblock %}
