@@ -7,6 +7,10 @@ class AdolescenteForm(forms.ModelForm):
     class Meta:
         model = Adolescente
         fields = '__all__'
+        widgets = {
+            'data_nascimento': forms.DateInput(attrs={'type': 'date'}),
+            'data_inicio': forms.DateInput(attrs={'type': 'date'}),
+        }
 
     # não permite que a data de nascimento seja no futuro
     def clean_data_nascimento(self):
