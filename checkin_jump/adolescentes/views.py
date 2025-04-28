@@ -42,26 +42,14 @@ def pagina_pgs(request):
 @login_required
 def criar_adolescente(request):
     if request.method == "POST":
-        data_nascimento = request.POST.get("data_nascimento")
-
-        # Limpa mensagens antigas
-        storage = get_messages(request)
-        list(storage)  # Isso esvazia o iterador de mensagens
-
-        # Validação de data
-        if data_nascimento:
-            try:
-                data = datetime.strptime(data_nascimento, '%d/%m/%Y')
-                if data > datetime.now():
-                    messages.error(request, "A data de nascimento não pode ser no futuro.")
-                    return redirect('criar_adolescente')
-            except ValueError:
-                messages.error(request, "Formato de data inválido. Use dia/mês/ano.")
-                return redirect('criar_adolescente')
-
-        # Processa formulário
         form = AdolescenteForm(request.POST, request.FILES)
         if form.is_valid():
+            # Verifica se a data de nascimento não é futura
+            data_nascimento = form.cleaned_data['data_nascimento']
+            if data_nascimento > datetime.now().date():
+                messages.error(request, "A data de nascimento não pode ser no futuro.")
+                return redirect('criar_adolescente')
+
             form.save()
             return redirect('listar_adolescentes')
     else:

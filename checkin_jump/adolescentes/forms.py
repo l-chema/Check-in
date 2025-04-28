@@ -8,8 +8,14 @@ class AdolescenteForm(forms.ModelForm):
         model = Adolescente
         fields = '__all__'
         widgets = {
-            'data_nascimento': forms.DateInput(attrs={'type': 'date'}),
-            'data_inicio': forms.DateInput(attrs={'type': 'date'}),
+            'data_nascimento': forms.TextInput(attrs={
+                'class': 'mascara-data',
+                'placeholder': 'dd/mm/aaaa'
+            }),
+            'data_inicio': forms.TextInput(attrs={
+                'class': 'mascara-data',
+                'placeholder': 'dd/mm/aaaa'
+            }),
         }
 
     # não permite que a data de nascimento seja no futuro
