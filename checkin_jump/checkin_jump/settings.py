@@ -52,7 +52,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'checkin_jump.urls'
+ROOT_URLCONF = 'checkin_jump.checkin_jump.urls'
 
 TEMPLATES = [
     {
