@@ -2,6 +2,8 @@ services:
   - type: web
     name: checkin
     env: python
-    buildCommand: pip install -r requirements.txt
     startCommand: gunicorn checkin_jump.checkin_jump.wsgi:application
     autoDeploy: true
+    buildCommand: |
+      pip install -r requirements.txt
+      python manage.py collectstatic --noinput
