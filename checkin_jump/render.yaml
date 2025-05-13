@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: checkin
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn checkin_jump.wsgi:application
+    rootDir: checkin_jump
+    autoDeploy: true
