@@ -6,6 +6,7 @@ services:
       pip install -r requirements.txt
       python manage.py migrate
       python manage.py createsuperuser --noinput || true
+      python manage.py collectstatic --noinput
     startCommand: gunicorn checkin_jump.wsgi:application
     envVars:
       - key: DJANGO_SUPERUSER_USERNAME
