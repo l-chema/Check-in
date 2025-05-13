@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: checkin-jump
+    name: checkin
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn checkin_jump.wsgi:application
