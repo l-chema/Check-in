@@ -27,7 +27,7 @@ SECRET_KEY = '08e4072502d596b84575813c3105d805'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '192.168.150.106', '.onrender.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
