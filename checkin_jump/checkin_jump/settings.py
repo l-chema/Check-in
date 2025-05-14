@@ -27,8 +27,8 @@ SECRET_KEY = '08e4072502d596b84575813c3105d805'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-# ALLOWED_HOSTS = ['*']
-ALLOWED_HOSTS = ['.onrender.com', 'localhost', '127.0.0.1']
+ ALLOWED_HOSTS = ['*']
+# ALLOWED_HOSTS = ['check-in-suyo.onrender.com', '.onrender.com', 'localhost', '127.0.0.1']
 
 # Application definition
 
