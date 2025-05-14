@@ -141,3 +141,7 @@ MIDDLEWARE.insert(1, "whitenoise.middleware.WhiteNoiseMiddleware")
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_URL = "/login/"
+
+# Segurança de cookies
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
