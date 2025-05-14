@@ -4,17 +4,17 @@ services:
     env: python
     buildCommand: |
       pip install -r requirements.txt
-      python manage.py migrate
       python manage.py collectstatic --noinput
-      python manage.py createsuperuser --noinput || true
-    startCommand: gunicorn checkin_jump.wsgi:application
+      
+    startCommand: >
+      python manage.py migrate && 
+      python manage.py shell < create_superuser.py &&
+      gunicorn checkin_jump.wsgi:application
     envVars:
       - key: DJANGO_SUPERUSER_USERNAME
         value: admin
       - key: DJANGO_SUPERUSER_PASSWORD
         value: checkin123
-      - key: DJANGO_SUPERUSER_EMAIL
-        value: admin@example.com  # Mesmo que você não use, alguns setups exigem
 
       # Configurações adicionais de ambiente
       - key: DJANGO_SETTINGS_MODULE
