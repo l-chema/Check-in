@@ -126,11 +126,14 @@ DATE_FORMAT = 'd/m/Y'
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Inclui os arquivos da pasta checkin_jump/static no desenvolvimento
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'checkin_jump', 'static')]
+
+# Local para onde os arquivos são coletados em produção
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
-
-# Para produção
+# Para produção com WhiteNoise
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MIDDLEWARE.insert(1, "whitenoise.middleware.WhiteNoiseMiddleware")
