@@ -134,7 +134,10 @@ DATE_FORMAT = 'd/m/Y'
 STATIC_URL = '/static/'
 
 # Inclui os arquivos da pasta checkin_jump/static no desenvolvimento
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'checkin_jump', 'static')]
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'checkin_jump', 'static'),
+    os.path.join(BASE_DIR, 'static'),
+]
 
 # Local para onde os arquivos são coletados em produção
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
