@@ -84,9 +84,9 @@ WSGI_APPLICATION = 'checkin_jump.checkin_jump.wsgi.application'
 #    }
 #}
 
-DATABASES = {
-    'default': dj_database_url.config(default='sqlite:///db.sqlite3')
-}
+#DATABASES = {
+#    'default': dj_database_url.config(default='sqlite:///db.sqlite3')
+#}
 
 DATABASES = {
     'default': dj_database_url.config(
