@@ -1,0 +1,1194 @@
+[
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "adolescentes",
+        "model": "adolescente"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "adolescentes",
+        "model": "diaevento"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "adolescentes",
+        "model": "presenca"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "adolescentes",
+        "model": "pequenogrupo"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "oz892m06f76st0d4l4n9h7tfda82ytou",
+    "fields": {
+        "session_data": ".eJxVjDkOwjAUBe_iGlmxnXihpOcM0d-MA8iR4qRC3B0ipYD2zcx7qRG2tYxbk2WcWJ2VVaffDYEeUnfAd6i3WdNc12VCvSv6oE1fZ5bn5XD_Dgq08q3BJ-w7NnFgErFi2QfLGND1yCZDyA5oyCYmAnHUxWg6sBRjQJ84OfX-AAf4OJY:1u9XDA:xTcF8W5HtCuw7jxMgzlDztnoIkZVQmvAnnX7Hi0nTao",
+        "expire_date": "2025-05-12T22:44:28.658Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "pvxogfg48icfixrx487xusoxwbtma6zd",
+    "fields": {
+        "session_data": ".eJxVjDkOwjAUBe_iGlmxnXihpOcM0d-MA8iR4qRC3B0ipYD2zcx7qRG2tYxbk2WcWJ2VVaffDYEeUnfAd6i3WdNc12VCvSv6oE1fZ5bn5XD_Dgq08q3BJ-w7NnFgErFi2QfLGND1yCZDyA5oyCYmAnHUxWg6sBRjQJ84OfX-AAf4OJY:1u9XJa:IzoEQYAoqNJ4E1gnqSc1zYd6tFLDNevRXsesvOUOQWQ",
+        "expire_date": "2025-05-12T22:51:06.813Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "sy8yhus7m0rhme185yjvxsmxg0jn7iga",
+    "fields": {
+        "session_data": ".eJxVjMEOwiAQRP-FsyHCUqAevfsNZJcFqRpISnsy_rtt0oNe5jDvzbxFwHUpYe1pDhOLi1Di9NsRxmeqO-AH1nuTsdVlnkjuijxol7fG6XU93L-Dgr1sazu4lAZLYDKNaksHnMbIkeCcdUan2XgPjgwpAm9Rgx_YEBJEixTF5wvxRTiP:1u8rJv:ey6xgVGkWfjuzURTRZqayvnazxpmlzMg9i2NXAoMW3A",
+        "expire_date": "2025-05-11T02:00:39.517Z"
+    }
+},
+{
+    "model": "adolescentes.pequenogrupo",
+    "pk": 1,
+    "fields": {
+        "nome": "Neivinha e PP",
+        "lider": "Lucas Neiva e Pedro Paulo"
+    }
+},
+{
+    "model": "adolescentes.pequenogrupo",
+    "pk": 2,
+    "fields": {
+        "nome": "Dudu e Markim",
+        "lider": "Eduardo e Marcus"
+    }
+},
+{
+    "model": "adolescentes.adolescente",
+    "pk": 1,
+    "fields": {
+        "nome": "Lucas",
+        "sobrenome": "Neiva",
+        "foto": "",
+        "data_nascimento": "2005-05-17",
+        "genero": "M",
+        "pg": 1,
+        "data_inicio": null
+    }
+},
+{
+    "model": "adolescentes.adolescente",
+    "pk": 2,
+    "fields": {
+        "nome": "Bernardo",
+        "sobrenome": "Giannetti",
+        "foto": "",
+        "data_nascimento": "2007-06-01",
+        "genero": "M",
+        "pg": 2,
+        "data_inicio": null
+    }
+},
+{
+    "model": "adolescentes.adolescente",
+    "pk": 3,
+    "fields": {
+        "nome": "Eduardo",
+        "sobrenome": "Torres",
+        "foto": "",
+        "data_nascimento": "2004-09-30",
+        "genero": "M",
+        "pg": 2,
+        "data_inicio": null
+    }
+},
+{
+    "model": "adolescentes.diaevento",
+    "pk": 1,
+    "fields": {
+        "data": "2025-04-30"
+    }
+},
+{
+    "model": "adolescentes.diaevento",
+    "pk": 2,
+    "fields": {
+        "data": "2025-05-02"
+    }
+},
+{
+    "model": "adolescentes.diaevento",
+    "pk": 3,
+    "fields": {
+        "data": "2025-05-05"
+    }
+},
+{
+    "model": "adolescentes.presenca",
+    "pk": 1,
+    "fields": {
+        "adolescente": 1,
+        "dia": 1,
+        "presente": true
+    }
+},
+{
+    "model": "adolescentes.presenca",
+    "pk": 10,
+    "fields": {
+        "adolescente": 1,
+        "dia": 2,
+        "presente": true
+    }
+},
+{
+    "model": "adolescentes.presenca",
+    "pk": 11,
+    "fields": {
+        "adolescente": 2,
+        "dia": 2,
+        "presente": false
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add adolescente",
+        "content_type": [
+            "adolescentes",
+            "adolescente"
+        ],
+        "codename": "add_adolescente"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change adolescente",
+        "content_type": [
+            "adolescentes",
+            "adolescente"
+        ],
+        "codename": "change_adolescente"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete adolescente",
+        "content_type": [
+            "adolescentes",
+            "adolescente"
+        ],
+        "codename": "delete_adolescente"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view adolescente",
+        "content_type": [
+            "adolescentes",
+            "adolescente"
+        ],
+        "codename": "view_adolescente"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add dia evento",
+        "content_type": [
+            "adolescentes",
+            "diaevento"
+        ],
+        "codename": "add_diaevento"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change dia evento",
+        "content_type": [
+            "adolescentes",
+            "diaevento"
+        ],
+        "codename": "change_diaevento"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete dia evento",
+        "content_type": [
+            "adolescentes",
+            "diaevento"
+        ],
+        "codename": "delete_diaevento"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view dia evento",
+        "content_type": [
+            "adolescentes",
+            "diaevento"
+        ],
+        "codename": "view_diaevento"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add presenca",
+        "content_type": [
+            "adolescentes",
+            "presenca"
+        ],
+        "codename": "add_presenca"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change presenca",
+        "content_type": [
+            "adolescentes",
+            "presenca"
+        ],
+        "codename": "change_presenca"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete presenca",
+        "content_type": [
+            "adolescentes",
+            "presenca"
+        ],
+        "codename": "delete_presenca"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view presenca",
+        "content_type": [
+            "adolescentes",
+            "presenca"
+        ],
+        "codename": "view_presenca"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add pequeno grupo",
+        "content_type": [
+            "adolescentes",
+            "pequenogrupo"
+        ],
+        "codename": "add_pequenogrupo"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change pequeno grupo",
+        "content_type": [
+            "adolescentes",
+            "pequenogrupo"
+        ],
+        "codename": "change_pequenogrupo"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete pequeno grupo",
+        "content_type": [
+            "adolescentes",
+            "pequenogrupo"
+        ],
+        "codename": "delete_pequenogrupo"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view pequeno grupo",
+        "content_type": [
+            "adolescentes",
+            "pequenogrupo"
+        ],
+        "codename": "view_pequenogrupo"
+    }
+},
+{
+    "model": "auth.group",
+    "fields": {
+        "name": "ADMINISTRADORES",
+        "permissions": [
+            [
+                "add_logentry",
+                "admin",
+                "logentry"
+            ],
+            [
+                "change_logentry",
+                "admin",
+                "logentry"
+            ],
+            [
+                "delete_logentry",
+                "admin",
+                "logentry"
+            ],
+            [
+                "view_logentry",
+                "admin",
+                "logentry"
+            ],
+            [
+                "add_adolescente",
+                "adolescentes",
+                "adolescente"
+            ],
+            [
+                "change_adolescente",
+                "adolescentes",
+                "adolescente"
+            ],
+            [
+                "delete_adolescente",
+                "adolescentes",
+                "adolescente"
+            ],
+            [
+                "view_adolescente",
+                "adolescentes",
+                "adolescente"
+            ],
+            [
+                "add_diaevento",
+                "adolescentes",
+                "diaevento"
+            ],
+            [
+                "change_diaevento",
+                "adolescentes",
+                "diaevento"
+            ],
+            [
+                "delete_diaevento",
+                "adolescentes",
+                "diaevento"
+            ],
+            [
+                "view_diaevento",
+                "adolescentes",
+                "diaevento"
+            ],
+            [
+                "add_pequenogrupo",
+                "adolescentes",
+                "pequenogrupo"
+            ],
+            [
+                "change_pequenogrupo",
+                "adolescentes",
+                "pequenogrupo"
+            ],
+            [
+                "delete_pequenogrupo",
+                "adolescentes",
+                "pequenogrupo"
+            ],
+            [
+                "view_pequenogrupo",
+                "adolescentes",
+                "pequenogrupo"
+            ],
+            [
+                "add_presenca",
+                "adolescentes",
+                "presenca"
+            ],
+            [
+                "change_presenca",
+                "adolescentes",
+                "presenca"
+            ],
+            [
+                "delete_presenca",
+                "adolescentes",
+                "presenca"
+            ],
+            [
+                "view_presenca",
+                "adolescentes",
+                "presenca"
+            ],
+            [
+                "add_group",
+                "auth",
+                "group"
+            ],
+            [
+                "change_group",
+                "auth",
+                "group"
+            ],
+            [
+                "delete_group",
+                "auth",
+                "group"
+            ],
+            [
+                "view_group",
+                "auth",
+                "group"
+            ],
+            [
+                "add_permission",
+                "auth",
+                "permission"
+            ],
+            [
+                "change_permission",
+                "auth",
+                "permission"
+            ],
+            [
+                "delete_permission",
+                "auth",
+                "permission"
+            ],
+            [
+                "view_permission",
+                "auth",
+                "permission"
+            ],
+            [
+                "add_user",
+                "auth",
+                "user"
+            ],
+            [
+                "change_user",
+                "auth",
+                "user"
+            ],
+            [
+                "delete_user",
+                "auth",
+                "user"
+            ],
+            [
+                "view_user",
+                "auth",
+                "user"
+            ],
+            [
+                "add_contenttype",
+                "contenttypes",
+                "contenttype"
+            ],
+            [
+                "change_contenttype",
+                "contenttypes",
+                "contenttype"
+            ],
+            [
+                "delete_contenttype",
+                "contenttypes",
+                "contenttype"
+            ],
+            [
+                "view_contenttype",
+                "contenttypes",
+                "contenttype"
+            ],
+            [
+                "add_session",
+                "sessions",
+                "session"
+            ],
+            [
+                "change_session",
+                "sessions",
+                "session"
+            ],
+            [
+                "delete_session",
+                "sessions",
+                "session"
+            ],
+            [
+                "view_session",
+                "sessions",
+                "session"
+            ]
+        ]
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$tE16woMCY8xlkL0OPFuN63$opweCQtNbFNAZcmcvbxNZdifBrULPFmocicHJb8+KkE=",
+        "last_login": "2025-04-27T02:00:39.514Z",
+        "is_superuser": false,
+        "username": "neivinha",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-04-25T05:58:29Z",
+        "groups": [
+            [
+                "ADMINISTRADORES"
+            ]
+        ],
+        "user_permissions": [
+            [
+                "add_logentry",
+                "admin",
+                "logentry"
+            ],
+            [
+                "change_logentry",
+                "admin",
+                "logentry"
+            ],
+            [
+                "delete_logentry",
+                "admin",
+                "logentry"
+            ],
+            [
+                "view_logentry",
+                "admin",
+                "logentry"
+            ],
+            [
+                "add_adolescente",
+                "adolescentes",
+                "adolescente"
+            ],
+            [
+                "change_adolescente",
+                "adolescentes",
+                "adolescente"
+            ],
+            [
+                "delete_adolescente",
+                "adolescentes",
+                "adolescente"
+            ],
+            [
+                "view_adolescente",
+                "adolescentes",
+                "adolescente"
+            ],
+            [
+                "add_diaevento",
+                "adolescentes",
+                "diaevento"
+            ],
+            [
+                "change_diaevento",
+                "adolescentes",
+                "diaevento"
+            ],
+            [
+                "delete_diaevento",
+                "adolescentes",
+                "diaevento"
+            ],
+            [
+                "view_diaevento",
+                "adolescentes",
+                "diaevento"
+            ],
+            [
+                "add_pequenogrupo",
+                "adolescentes",
+                "pequenogrupo"
+            ],
+            [
+                "change_pequenogrupo",
+                "adolescentes",
+                "pequenogrupo"
+            ],
+            [
+                "delete_pequenogrupo",
+                "adolescentes",
+                "pequenogrupo"
+            ],
+            [
+                "view_pequenogrupo",
+                "adolescentes",
+                "pequenogrupo"
+            ],
+            [
+                "add_presenca",
+                "adolescentes",
+                "presenca"
+            ],
+            [
+                "change_presenca",
+                "adolescentes",
+                "presenca"
+            ],
+            [
+                "delete_presenca",
+                "adolescentes",
+                "presenca"
+            ],
+            [
+                "view_presenca",
+                "adolescentes",
+                "presenca"
+            ],
+            [
+                "add_group",
+                "auth",
+                "group"
+            ],
+            [
+                "change_group",
+                "auth",
+                "group"
+            ],
+            [
+                "delete_group",
+                "auth",
+                "group"
+            ],
+            [
+                "view_group",
+                "auth",
+                "group"
+            ],
+            [
+                "add_permission",
+                "auth",
+                "permission"
+            ],
+            [
+                "change_permission",
+                "auth",
+                "permission"
+            ],
+            [
+                "delete_permission",
+                "auth",
+                "permission"
+            ],
+            [
+                "view_permission",
+                "auth",
+                "permission"
+            ],
+            [
+                "add_user",
+                "auth",
+                "user"
+            ],
+            [
+                "change_user",
+                "auth",
+                "user"
+            ],
+            [
+                "delete_user",
+                "auth",
+                "user"
+            ],
+            [
+                "view_user",
+                "auth",
+                "user"
+            ],
+            [
+                "add_contenttype",
+                "contenttypes",
+                "contenttype"
+            ],
+            [
+                "change_contenttype",
+                "contenttypes",
+                "contenttype"
+            ],
+            [
+                "delete_contenttype",
+                "contenttypes",
+                "contenttype"
+            ],
+            [
+                "view_contenttype",
+                "contenttypes",
+                "contenttype"
+            ],
+            [
+                "add_session",
+                "sessions",
+                "session"
+            ],
+            [
+                "change_session",
+                "sessions",
+                "session"
+            ],
+            [
+                "delete_session",
+                "sessions",
+                "session"
+            ],
+            [
+                "view_session",
+                "sessions",
+                "session"
+            ]
+        ]
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$Wvb84gvwtNi5B13WMrbbSX$QMFlsl2AEqQM4MAwjtv6z72RZW6PNAturz6zqEPINX4=",
+        "last_login": "2025-04-28T22:51:06.810Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-04-25T05:59:52.702Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2025-04-25T06:01:00.852Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "object_id": "1",
+        "object_repr": "ADMINISTRADORES",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2025-04-25T06:01:09.385Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "object_id": "1",
+        "object_repr": "ADMINISTRADORES",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2025-04-25T06:01:29.705Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "1",
+        "object_repr": "neivinha",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Superuser status\", \"Groups\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2025-04-25T06:03:37.624Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "1",
+        "object_repr": "neivinha",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"User permissions\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2025-04-25T06:04:02.129Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "object_id": "1",
+        "object_repr": "ADMINISTRADORES",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2025-04-25T06:04:08.566Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "1",
+        "object_repr": "neivinha",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+}
+]
