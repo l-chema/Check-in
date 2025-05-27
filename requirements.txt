@@ -13,5 +13,8 @@ gunicorn==23.0.0
 # Servir arquivos estáticos no Render
 whitenoise==6.6.0
 
-# não sei que lib é essa
+# Gerenciamento de URL do banco de dados
 dj-database-url==1.2.0
+
+# Driver de conexão com PostgreSQL
+psycopg2-binary>=2.9
