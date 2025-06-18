@@ -5,23 +5,22 @@ services:
     buildCommand: |
       pip install -r requirements.txt
       python manage.py collectstatic --noinput
-      
+      python manage.py migrate	      
+
     startCommand: >
-      python manage.py migrate && 
-      python manage.py shell < create_superuser.py &&
+       python manage.py shell < create_superuser.py &&
       gunicorn checkin_jump.wsgi:application
     envVars:
       - key: DJANGO_SUPERUSER_USERNAME
         value: admin
       - key: DJANGO_SUPERUSER_PASSWORD
         value: checkin123
+      - key: DJANGO_SETTINGS_MODULE
+        value: checkin_jump.settings  # Altere se o caminho for diferente
+      - key: SECRET_KEY
+        value: 08e4072502d596b84575813c3105d805
+      - key: DEBUG
+        value: 'False'  # Segurança para produção
       
     staticPublishPath: staticfiles
-
-  # Configurações adicionais de ambiente
-  - key: DJANGO_SETTINGS_MODULE
-    value: checkin_jump.settings  # Altere se o caminho for diferente
-  - key: SECRET_KEY
-    value: 08e4072502d596b84575813c3105d805
-  - key: DEBUG
-    value: 'False'  # Segurança para produção
+ 
